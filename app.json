@@ -1,0 +1,32 @@
+{
+  "name": "ema-version-1",
+  "scripts": {
+  },
+  "env": {
+    "HEROKU_POSTGRESQL_BLUE_URL": {
+      "required": true
+    },
+    "HEROKU_POSTGRESQL_COBALT_URL": {
+      "required": true
+    },
+    "TIMES": {
+      "required": true
+    },
+    "USERS_DB_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "heroku-postgresql",
+    "heroku-postgresql",
+    "heroku-postgresql",
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
